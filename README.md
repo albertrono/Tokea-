@@ -3,7 +3,7 @@
 Welcome to **Tokea!**, your ultimate destination for experiencing live events, concerts, and festivals worldwide. This website allows users to explore upcoming events, purchase tickets, and learn more about the vibrant world of live entertainment.
 
 ## Screenshot
-![Screenshot of Tokea! Home Page](Images/Screenshot.jpeg)
+![Screenshot of Tokea! Home Page](Images/Screenshot.png)
 
 ## Features
 - **Home Page**: Engaging landing page with a video background, upcoming events slider, and a countdown to the next big announcement.
