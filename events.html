@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Tokea!</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/eventStyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nav Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Tokea!</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="ticketing.html">Tickets</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Events Section -->
+    <section class="events-section">
+        <h1>Upcoming Events</h1>
+        <p>Explore our exciting upcoming events and find out what's happening in your area!</p>
+
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search events..." />
+            <button onclick="searchEvents()">Search</button>
+        </div>
+
+        <div class="events-container" id="eventsContainer">
+            <div class="event-card">
+                <h2>Music Festival 2024</h2>
+                <p>Date: April 20, 2024</p>
+                <p>Location: Nairobi, Kenya</p>
+                <button onclick="window.location.href='ticketing.html'">View Tickets</button>
+            </div>
+
+            <div class="event-card">
+                <h2>Art Expo</h2>
+                <p>Date: May 15, 2024</p>
+                <p>Location: Mombasa, Kenya</p>
+                <button onclick="window.location.href='ticketing.html'">View Tickets</button>
+            </div>
+
+            <div class="event-card">
+                <h2>Cultural Festival</h2>
+                <p>Date: June 10, 2024</p>
+                <p>Location: Kisumu, Kenya</p>
+                <button onclick="window.location.href='ticketing.html'">View Tickets</button>
+            </div>
+
+            <div class="event-card">
+                <h2>Tech Conference</h2>
+                <p>Date: July 25, 2024</p>
+                <p>Location: Nairobi, Kenya</p>
+                <button onclick="window.location.href='ticketing.html'">View Tickets</button>
+            </div>
+
+            <div class="event-card">
+                <h2>Food Festival</h2>
+                <p>Date: August 5, 2024</p>
+                <p>Location: Nairobi, Kenya</p>
+                <button onclick="window.location.href='ticketing.html'">View Tickets</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Tokea!</h3>
+                <p>Tokea! is your ultimate platform for discovering and attending live events, concerts, and festivals. Stay connected and grab your tickets for the best experiences!</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="ticketing.html">Tickets</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="Images/icons8-facebook-50.png" alt="Facebook"></a>
+                    <a href="https://x.com/_ance_stor" target="_blank"><img src="Images/icons8-twitter-50.png" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/its_berito/?hl=en" target="_blank"><img src="Images/icons8-instagram-50.png" alt="Instagram" ></a>
+                    <a href="https://www.youtube.com/@m_ancestor" target="_blank"><img src="Images/icons8-youtube-50.png" alt="YouTube"></a>
+                    <a href="https://www.linkedin.com/in/albert-rono043/" target="_blank"><img src="Images/icons8-linkedin-50.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tokea!. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

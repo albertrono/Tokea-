@@ -1,0 +1,55 @@
+/* Ticketing Section */
+.ticketing-section {
+    background-color: #7a5858;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.ticketing-section h1 {
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #333;
+}
+
+.ticket-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: gray;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-item {
+    margin-bottom: 20px;
+}
+
+.ticket-item label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.ticket-item input, .ticket-item select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.ticket-item input[type="number"] {
+    width: 100px;
+}
+
+.ticket-total {
+    margin-top: 30px;
+}
+
+#total-price {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}

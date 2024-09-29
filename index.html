@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nav Bar-->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Tokea!</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="ticketing.html" class="cta-btn">Buy Tickets</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <video autoplay muted loop id="heroVideo">
+            <source src="Images/event_video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>Experience the Ultimate Concert of the Year</h1>
+            <p>Get ready for unforgettable live performances, all in one place.</p>
+            <a href="events.html" class="btn primary-btn">View Events</a>
+            <a href="about.html" class="btn secondary-btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Upcoming Events slider -->
+    <section class="events-slider">
+        <h2>Upcoming Events</h2>
+        <div class="slider">
+            <div class="slider-item" onclick="openModal('event1')">
+                <img src="Images/event1.jpg" alt="Event 1">
+                <h3>Rock Music Fest 2024</h3>
+                <p>Date: October 10, 2024</p>
+            </div>
+            <div class="slider-item" onclick="openModal('event2')">
+                <img src="Images/event4.jpg" alt="Event 2">
+                <h3>Jazz Night Live</h3>
+                <p>Date: November 15, 2024</p>
+            </div>
+            <div class="slider-item" onclick="openModal('event3')">
+                <img src="Images/event3.jpeg" alt="Event 3">
+                <h3>Electro Beats Festival</h3>
+                <p>Date: December 5, 2024</p>
+            </div>
+            <div class="slider-item" onclick="openModal('event3')">
+                <img src="Images/event2.jpeg" alt="Event 3">
+                <h3>Jazz</h3>
+                <p>Date: January 5, 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="event1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('event1')">&times;</span>
+            <h2>Rock Music Fest 2024</h2>
+            <p>Date: October 10, 2024</p>
+            <p>Location: Sarit Center, Nairobi</p>
+            <p>Description: Get ready to experience the best rock music from top bands across the globe.</p>
+        </div>
+    </div>
+
+    <div id="event2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('event2')">&times;</span>
+            <h2>Jazz Night Live</h2>
+            <p>Date: November 15, 2024</p>
+            <p>Location: LH 4 MMU, Kenya</p>
+            <p>Description: An elegant evening with smooth jazz, featuring renowned jazz musicians.</p>
+        </div>
+    </div>
+
+    <div id="event3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('event3')">&times;</span>
+            <h2>Electro Beats Festival</h2>
+            <p>Date: December 5, 2024</p>
+            <p>Location: Miami Beach, Florida</p>
+            <p>Description: A fusion of electronic beats and visual effects, featuring top DJs.</p>
+        </div>
+    </div>
+    <div id="event4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('event3')">&times;</span>
+            <h2>Jazz Festival</h2>
+            <p>Date: January 5, 2025</p>
+            <p>Location: MMU Conference Hall</p>
+            <p>Description: A fusion of electronic beats and visual effects, featuring top DJs.</p>
+        </div>
+    </div>
+
+    <!--Countdown-->
+    <section class="countdown">
+        <h2>Countdown to the Next Big Announcement!</h2>
+        <h2>Do not miss it!!</h2>
+        <div class="timer" id="countdown">
+            <div><span id="days"></span>Days</div>
+            <div><span id="hours"></span>Hours</div>
+            <div><span id="minutes"></span>Minutes</div>
+            <div><span id="seconds"></span>Seconds</div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Tokea!</h3>
+                <p>Tokea! is your go-to platform for experiencing live events, concerts, and festivals around the world. Stay updated and grab your tickets now!</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="ticketing.html">Tickets</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="Images/icons8-facebook-50.png" alt="Facebook"></a>
+                    <a href="https://x.com/_ance_stor" target="_blank"><img src="Images/icons8-twitter-50.png" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/its_berito/?hl=en" target="_blank"><img src="Images/icons8-instagram-50.png" alt="Instagram" ></a>
+                    <a href="https://www.youtube.com/@m_ancestor" target="_blank"><img src="Images/icons8-youtube-50.png" alt="YouTube"></a>
+                    <a href="https://www.linkedin.com/in/albert-rono043/" target="_blank"><img src="Images/icons8-linkedin-50.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tokea!. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

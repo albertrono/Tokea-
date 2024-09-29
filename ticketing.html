@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokea! - Ticketing</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/ticketStyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nav Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Tokea!</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="ticketing.html">Tickets</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ticketing Section -->
+    <section class="ticketing-section">
+        <h1>Select Your Tickets</h1>
+
+        <div class="ticket-container">
+            <form id="ticket-form">
+                <div class="ticket-item">
+                    <label for="event-select">Select Event:</label>
+                    <select id="event-select">
+                        <option value="">Choose Event</option>
+                        <option value="Rock Music Fest">Rock Music Fest</option>
+                        <option value="Jazz Night Live">Jazz Night Live</option>
+                        <option value="Tech Conference 2024">Tech Conference 2024</option>
+                    </select>
+                </div>
+
+                <div class="ticket-item">
+                    <label for="ticket-type">Ticket Type:</label>
+                    <select id="ticket-type">
+                        <option value="">Choose Ticket Type</option>
+                        <option value="Regular">Regular</option>
+                        <option value="VIP">VIP</option>
+                        <option value="Student">Student</option>
+                    </select>
+                </div>
+
+                <div class="ticket-item">
+                    <label for="ticket-quantity">Number of Tickets:</label>
+                    <input type="number" id="ticket-quantity" min="1" max="10" placeholder="0">
+                </div>
+
+                <div class="ticket-item">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" placeholder="Enter your full name">
+                </div>
+
+                <div class="ticket-item">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+
+                <div class="ticket-item">
+                    <label for="payment-method">Payment Method:</label>
+                    <select id="payment-method">
+                        <option value="">Choose Payment Method</option>
+                        <option value="Credit Card">Credit Card</option>
+                        <option value="PayPal">PayPal</option>
+                        <option value="Mobile Money">Mobile Money</option>
+                    </select>
+                </div>
+
+                <div class="ticket-item">
+                    <label for="promo-code">Promo Code (Optional):</label>
+                    <input type="text" id="promo-code" placeholder="Enter promo code">
+                </div>
+
+                <button type="button" class="cta-btn" onclick="calculateTotal()">Get Total Price</button>
+
+                <div class="ticket-total">
+                    <h3 id="total-price">Total: $0</h3>
+                    <button type="submit" class="cta-btn">Proceed to Checkout</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Tokea!</h3>
+                <p>Tokea! is your ultimate platform for discovering and attending live events, concerts, and festivals. Stay connected and grab your tickets for the best experiences!</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="ticketing.html">Tickets</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="Images/icons8-facebook-50.png" alt="Facebook"></a>
+                    <a href="https://x.com/_ance_stor" target="_blank"><img src="Images/icons8-twitter-50.png" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/its_berito/?hl=en" target="_blank"><img src="Images/icons8-instagram-50.png" alt="Instagram" ></a>
+                    <a href="https://www.youtube.com/@m_ancestor" target="_blank"><img src="Images/icons8-youtube-50.png" alt="YouTube"></a>
+                    <a href="https://www.linkedin.com/in/albert-rono043/" target="_blank"><img src="Images/icons8-linkedin-50.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tokea!. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+/* About Us Section */
+.about-section {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-section h1 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #333;
+}
+
+.about-section p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #666;
+}
+
+.values-list {
+    list-style: none;
+    padding: 0;
+}
+
+.values-list li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h2 {
+    margin: 30px 0 15px;
+    font-size: 28px;
+    color: #ff5c5c;
+}
